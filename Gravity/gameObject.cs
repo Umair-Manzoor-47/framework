@@ -5,6 +5,8 @@ using System.Windows.Forms;
 
 namespace Gravity
 {
+    // this class creats individual objects for characters in game
+    
     class gameObject : Form
     {
         PictureBox character = new PictureBox();
@@ -12,6 +14,9 @@ namespace Gravity
         {
             character = obj;
         }
+        
+        // getting picture box for various actions
+        
         public PictureBox getCharacter()
         {
             return this.character;
