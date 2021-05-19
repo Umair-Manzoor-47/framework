@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\semester 2\\week 12\\Repositry\\Gravity\\Gravity.csproj",
+      "projectUniqueName": "E:\\semester 2\\week 12\\Repositry\\framework\\Umair-Manzoor-47\\framework\\Gravity\\Gravity.csproj",
       "projectName": "Gravity",
-      "projectPath": "E:\\semester 2\\week 12\\Repositry\\Gravity\\Gravity.csproj",
+      "projectPath": "E:\\semester 2\\week 12\\Repositry\\framework\\Umair-Manzoor-47\\framework\\Gravity\\Gravity.csproj",
       "packagesPath": "C:\\Users\\Umair manzoor\\.nuget\\packages\\",
-      "outputPath": "E:\\semester 2\\week 12\\Repositry\\Gravity\\obj\\",
+      "outputPath": "E:\\semester 2\\week 12\\Repositry\\framework\\Umair-Manzoor-47\\framework\\Gravity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Umair manzoor\\AppData\\Roaming\\NuGet\\NuGet.Config"

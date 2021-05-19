@@ -2,26 +2,30 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace Gravity
 {
-    // this class creats individual objects for characters in game
-    
-    class gameObject : Form
+    //class for every character
+    class gameObject
     {
-        PictureBox character = new PictureBox();
-        public gameObject(PictureBox obj)
+        // pictureBoxes as character
+        PictureBox character;
+        public gameObject() // null constructor
         {
-            character = obj;
+            
         }
         
-        // getting picture box for various actions
+        public gameObject(PictureBox character) // constructor overloading
+        {
+            this.character = character;
+        }
         
+        // return pictureBox
         public PictureBox getCharacter()
         {
             return this.character;
         }
-        
 
     }
 }

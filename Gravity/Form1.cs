@@ -12,6 +12,8 @@ namespace Gravity
 {
     public partial class Form1 : Form
     {
+        // creating object
+        game obj;
         public Form1()
         {
             InitializeComponent();
@@ -19,21 +21,27 @@ namespace Gravity
 
         private void GameTimer(object sender, EventArgs e)
         {
-           update();
+            // Allow objects to free fall
+            obj.update();
 
         }
 
-
-        // this method will decide speed of falling object and which object to fall under gravity as well
-        public void update()
+        // form load event
+        private void Form1_Load(object sender, EventArgs e)
         {
-            Movement obj = new Movement(3);
+
+            // decide speed 
+            obj = new game(5);
+
+            // adding objects in gameObject class
             gameObject player = new gameObject(hero);
             gameObject enemy_1 = new gameObject(enemyOne);
             gameObject enemy_2 = new gameObject(enemyTwo);
-            obj.fall(player);
-            obj.fall(enemy_1);
-            obj.fall(enemy_2);
+
+            // saving in array for further actions 
+            obj.addObject(player);
+            obj.addObject(enemy_1);
+            obj.addObject(enemy_2);
         }
     }
 }
