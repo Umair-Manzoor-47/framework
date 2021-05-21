@@ -9,7 +9,7 @@ namespace Movements
 {
     class Up : Move
     {
-        public override void action(PictureBox character, int MovementSpeed)
+        public void action(PictureBox character, int MovementSpeed)
         {
             character.Top -= MovementSpeed;
         }

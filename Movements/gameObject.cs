@@ -16,6 +16,9 @@ namespace Movements
         int speed;
         // movement class
         Move obj;
+
+        /* in case there are more movements we can make an arrayList here
+         * and save objects and call action methods in update function */
         public gameObject() // null constructor
         {
 
@@ -28,12 +31,12 @@ namespace Movements
             obj = go;
         }
 
-        public void Update(){
+        public void Update()
+        {
 
             obj.action(this.character, this.speed);
 
-        }
-        
+        }  
 
     }
 }

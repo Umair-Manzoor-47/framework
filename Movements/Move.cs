@@ -8,12 +8,10 @@ using System.Windows.Forms;
 
 namespace Movements
 {
-    class Move
+    interface Move
     {
-        public virtual void action(PictureBox character, int MovementSpeed)
-        {
-           // Null 
-        }
+    void action(PictureBox character, int MovementSpeed);
+        
 
     }
 }

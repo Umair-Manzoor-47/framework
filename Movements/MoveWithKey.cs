@@ -13,7 +13,7 @@ namespace Movements
         
         // boolean variables
         static bool goLeft, goRight, goUp, goDown;
-        public override void action(PictureBox character, int MovementSpeed)
+        public void action(PictureBox character, int MovementSpeed)
         {
             // character movement logic starts
 
