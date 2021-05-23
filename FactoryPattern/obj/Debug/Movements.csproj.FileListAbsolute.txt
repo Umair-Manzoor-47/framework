@@ -1,0 +1,10 @@
+E:\semester 2\week 12\Repositry\framework\Movements\bin\Debug\Movements.exe.config
+E:\semester 2\week 12\Repositry\framework\Movements\bin\Debug\Movements.exe
+E:\semester 2\week 12\Repositry\framework\Movements\bin\Debug\Movements.pdb
+E:\semester 2\week 12\Repositry\framework\Movements\obj\Debug\Movements.csprojAssemblyReference.cache
+E:\semester 2\week 12\Repositry\framework\Movements\obj\Debug\Movements.Form1.resources
+E:\semester 2\week 12\Repositry\framework\Movements\obj\Debug\Movements.Properties.Resources.resources
+E:\semester 2\week 12\Repositry\framework\Movements\obj\Debug\Movements.csproj.GenerateResource.cache
+E:\semester 2\week 12\Repositry\framework\Movements\obj\Debug\Movements.csproj.CoreCompileInputs.cache
+E:\semester 2\week 12\Repositry\framework\Movements\obj\Debug\Movements.exe
+E:\semester 2\week 12\Repositry\framework\Movements\obj\Debug\Movements.pdb
