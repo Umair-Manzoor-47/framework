@@ -1,0 +1,15 @@
+E:\semester 2\week 12\Repositry\framework\game\obj\Debug\fighter.csprojAssemblyReference.cache
+E:\semester 2\week 12\Repositry\framework\game\obj\Debug\jet.Form1.resources
+E:\semester 2\week 12\Repositry\framework\game\obj\Debug\jet.Properties.Resources.resources
+E:\semester 2\week 12\Repositry\framework\game\obj\Debug\fighter.csproj.GenerateResource.cache
+E:\semester 2\week 12\Repositry\framework\game\obj\Debug\fighter.csproj.CoreCompileInputs.cache
+E:\semester 2\week 12\Repositry\framework\game\bin\Debug\jet.exe.config
+E:\semester 2\week 12\Repositry\framework\game\bin\Debug\jet.exe
+E:\semester 2\week 12\Repositry\framework\game\bin\Debug\jet.pdb
+E:\semester 2\week 12\Repositry\framework\game\bin\Debug\Movements.dll
+E:\semester 2\week 12\Repositry\framework\game\bin\Debug\Movements.pdb
+E:\semester 2\week 12\Repositry\framework\game\bin\Debug\Movements.dll.config
+E:\semester 2\week 12\Repositry\framework\game\bin\Debug\Movements.exe.config
+E:\semester 2\week 12\Repositry\framework\game\obj\Debug\fighter.csproj.CopyComplete
+E:\semester 2\week 12\Repositry\framework\game\obj\Debug\jet.exe
+E:\semester 2\week 12\Repositry\framework\game\obj\Debug\jet.pdb
