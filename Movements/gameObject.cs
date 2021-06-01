@@ -27,7 +27,6 @@ namespace Movements
         {
 
             obj.action(this.character, this.speed);
-
         }  
 
     }
