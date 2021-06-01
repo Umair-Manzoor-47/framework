@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Movements
 {
-    public class Up : IMove
+    class Left : IMove
     {
         public void action(PictureBox character, int MovementSpeed)
         {
-            character.Top -= MovementSpeed;
+            character.Left += MovementSpeed;
         }
     }
 }

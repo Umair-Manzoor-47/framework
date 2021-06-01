@@ -5,13 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Movements
 {
-    public class Right : IMove
+    public interface IMove
     {
-        public void action(PictureBox character, int MovementSpeed)
-        {
-            character.Left -= MovementSpeed;
-        }
+    void action(PictureBox character, int MovementSpeed);   
+
     }
 }
