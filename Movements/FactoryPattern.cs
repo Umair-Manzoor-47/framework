@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Movements
 {
-    class FactoryPattern
+    public class FactoryPattern
     {
 
 
@@ -37,7 +37,7 @@ namespace Movements
         public gameObject createObj(Role role, PictureBox character, int speed)
         {
             // adding objects in gameObject class
-            gameObject obj = new gameObject(character, speed, new Left());
+            gameObject obj = new gameObject(character, speed, MovementType.Left);
 
             // count object
             objects[role.GetHashCode()] += 1;
@@ -49,10 +49,10 @@ namespace Movements
 
 
         // if movement is defined
-        public gameObject createObj(Role role, PictureBox character, int speed, IMove move)
+        public gameObject createObj(Role role, PictureBox character, int speed, MovementType type)
         {
             // adding objects in gameObject class
-            gameObject obj = new gameObject(character, speed, move);
+            gameObject obj = new gameObject(character, speed, type);
 
             // saving is Game Class
             game Add = game.GetInstance();

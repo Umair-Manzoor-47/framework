@@ -13,5 +13,9 @@ namespace Movements
         {
             character.Top += MovementSpeed;
         }
+        MovementType IMove.getType()
+        {
+            return MovementType.Down;
+        }
     }
 }

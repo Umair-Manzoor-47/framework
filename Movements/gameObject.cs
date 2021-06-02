@@ -12,15 +12,18 @@ namespace Movements
         int speed;
         // movement class
         IMove obj;
+       
+        ObjectFactory objectFactory = ObjectFactory.GetInstance();
 
         /* in case there are more movements we can make an arrayList here
          * and save objects and call action methods in update function */
 
-        internal gameObject(PictureBox character, int speed, IMove go) // constructor
+        internal gameObject(PictureBox character, int speed, MovementType type) // constructor
         {
             this.character = character;
             this.speed = speed;
-            obj = go;
+            
+            obj = objectFactory.getMovementType(type); 
         }
 
         public void Update() // update movement

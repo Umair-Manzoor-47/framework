@@ -13,5 +13,9 @@ namespace Movements
         {
             character.Left -= MovementSpeed;
         }
+        MovementType IMove.getType()
+        {
+            return MovementType.Right;
+        }
     }
 }

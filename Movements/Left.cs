@@ -7,11 +7,16 @@ using System.Threading.Tasks;
 
 namespace Movements
 {
-    class Left : IMove
+    public class Left : IMove
     {
         public void action(PictureBox character, int MovementSpeed)
         {
             character.Left += MovementSpeed;
+        }
+
+        MovementType IMove.getType()
+        {
+            return MovementType.Left;
         }
     }
 }

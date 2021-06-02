@@ -74,5 +74,9 @@ namespace Movements
                 goDown = false;
             }
         }
+        MovementType IMove.getType()
+        {
+            return MovementType.MoveWithKey;
+        }
     }
 }
