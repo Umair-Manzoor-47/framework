@@ -6,6 +6,7 @@ namespace Movements
 {
     public class gameObject
     {
+        Role role;
         // pictureBoxes as character
         PictureBox character;
         // speed
@@ -18,8 +19,9 @@ namespace Movements
         /* in case there are more movements we can make an arrayList here
          * and save objects and call action methods in update function */
 
-        internal gameObject(PictureBox character, int speed, MovementType type) // constructor
+        internal gameObject(Role role, PictureBox character, int speed, MovementType type) // constructor
         {
+            this.role = role;
             this.character = character;
             this.speed = speed;
             
@@ -30,7 +32,14 @@ namespace Movements
         {
 
             obj.action(this.character, this.speed);
-        }  
-
+        }        
+        public Role getRole()
+        {
+            return this.role;
+        }
+        public PictureBox getPb()
+        {
+            return this.character;
+        }
     }
 }

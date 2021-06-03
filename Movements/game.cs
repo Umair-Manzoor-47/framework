@@ -11,6 +11,7 @@ namespace Movements
 
     public class game
     {
+        
 
         // A private constructor to restrict the object creation from outside
         private game()
@@ -34,6 +35,7 @@ namespace Movements
         }
 
         private ArrayList gameObjects = new ArrayList();
+        List<CollisionDetection> collisions = new List<CollisionDetection>();
 
         public void addObject(gameObject gameObj)
         {
@@ -50,6 +52,41 @@ namespace Movements
 
             }
         }
+        public void addCollision(CollisionDetection collision)
+        {
+            collisions.Add(collision);
+
+        }
+        public void collision()
+        {
+            foreach(CollisionDetection collision in collisions)
+            {
+                collision.update();
+            }
+        }
+        public List<PictureBox> getPb(Role role)
+        {
+            List<PictureBox> pictureboxes = new List<PictureBox>();
+            PictureBox picture;
+
+            foreach (gameObject go in gameObjects)
+            {
+                if (role == go.getRole())
+                {
+                    picture = go.getPb();
+                    pictureboxes.Add(picture);
+                }
+                
+            }
+            return pictureboxes;
+        }
+        //public void addCollision(CollisionDetection collision, IImpact impact)
+        //{
+        //    collisions.Add(collision);
+        //    impacts.Add(impact);
+
+
+        //}
 
     }
 }

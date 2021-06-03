@@ -39,6 +39,7 @@ namespace jet
             this.PlayerCount = new System.Windows.Forms.Label();
             this.EnemiesCount = new System.Windows.Forms.Label();
             this.TotalObjects = new System.Windows.Forms.Label();
+            this.Hp = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.hero)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemyOne)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemyTwo)).BeginInit();
@@ -49,7 +50,7 @@ namespace jet
             // mainGameTimer
             // 
             this.mainGameTimer.Enabled = true;
-            this.mainGameTimer.Interval = 20;
+            this.mainGameTimer.Interval = 25;
             this.mainGameTimer.Tick += new System.EventHandler(this.timer);
             // 
             // hero
@@ -129,11 +130,20 @@ namespace jet
             this.TotalObjects.Size = new System.Drawing.Size(0, 16);
             this.TotalObjects.TabIndex = 7;
             // 
+            // Hp
+            // 
+            this.Hp.Location = new System.Drawing.Point(611, 425);
+            this.Hp.Name = "Hp";
+            this.Hp.Size = new System.Drawing.Size(177, 16);
+            this.Hp.TabIndex = 8;
+            this.Hp.Value = 100;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Hp);
             this.Controls.Add(this.TotalObjects);
             this.Controls.Add(this.EnemiesCount);
             this.Controls.Add(this.PlayerCount);
@@ -168,6 +178,7 @@ namespace jet
         private System.Windows.Forms.Label PlayerCount;
         private System.Windows.Forms.Label EnemiesCount;
         private System.Windows.Forms.Label TotalObjects;
+        private System.Windows.Forms.ProgressBar Hp;
     }
 }
 

@@ -27,6 +27,7 @@ namespace jet
         private void timer(object sender, EventArgs e)
         {
             obj.update();
+            obj.collisions();
 
 
         }
@@ -47,25 +48,30 @@ namespace jet
         {            
                 obj = game.GetInstance();
 
-                gameObject obj1 = factory.createObj(Role.hero, hero, 3, new MoveWithKey());
-                gameObject obj2 = factory.createObj(Role.enemy, enemyOne, 3, new Down()); // default behaviour
-                gameObject obj3 = factory.createObj(Role.enemy, enemyTwo, 2, new Down());
-                gameObject obj4 = factory.createObj(Role.enemy, enemyThree, 2, new Down());
-                gameObject obj5 = factory.createObj(Role.coin, coin, 2, new Down());
+                gameObject obj1 = factory.createObj(Role.hero, hero, 3, MovementType.MoveWithKey);
+                gameObject obj2 = factory.createObj(Role.enemy, enemyOne, 1, MovementType.Down); // default behaviour
+                gameObject obj3 = factory.createObj(Role.enemy, enemyTwo, 1, MovementType.Down);
+                gameObject obj4 = factory.createObj(Role.enemy, enemyThree, 1, MovementType.Down);
+                gameObject obj5 = factory.createObj(Role.coin, coin, 1, MovementType.Down);
+
+                CollisionDetection C = new CollisionDetection(Role.hero, Role.enemy, new ReduceHealth(Hp, 1));
+                CollisionDetection D = new CollisionDetection(Role.hero, Role.coin, new IncreaseHealth(Hp, 1));
+                CollisionDetection E = new CollisionDetection(Role.hero, Role.coin, new Reverse(Role.coin, 2));
 
 
+            // saving is Game Class
 
+            obj.addObject(obj1);
+            obj.addObject(obj2);
+            obj.addObject(obj3);
+            obj.addObject(obj4);
+            obj.addObject(obj5);
+            obj.addCollision(C);
+            obj.addCollision(D);
+            obj.addCollision(E);
 
-                // saving is Game Class
-
-                obj.addObject(obj1);
-                obj.addObject(obj2);
-                obj.addObject(obj3);
-                obj.addObject(obj4);
-                obj.addObject(obj5);
-
-                // No of objects
-                PlayerCount.Text = "Players : " + factory.getHeroCount();
+            // No of objects
+            PlayerCount.Text = "Players : " + factory.getHeroCount();
                 EnemiesCount.Text = "Enemy : " + factory.getEnemyCount();
                 // CoinsCount.Text = "Coins : " + factory.getCoinCount();
                 TotalObjects.Text = "Total Objects : " + factory.getTotalCount();

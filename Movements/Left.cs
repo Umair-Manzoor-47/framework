@@ -9,6 +9,8 @@ namespace Movements
 {
     public class Left : IMove
     {
+        // null constructor
+        internal Left(){ }
         public void action(PictureBox character, int MovementSpeed)
         {
             character.Left += MovementSpeed;

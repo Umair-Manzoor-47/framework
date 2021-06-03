@@ -9,6 +9,8 @@ namespace Movements
 {
     public class Up : IMove
     {
+        // void constructor
+        internal Up(){  }
         public void action(PictureBox character, int MovementSpeed)
         {
             character.Top -= MovementSpeed;

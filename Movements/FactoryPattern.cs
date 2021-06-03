@@ -37,7 +37,7 @@ namespace Movements
         public gameObject createObj(Role role, PictureBox character, int speed)
         {
             // adding objects in gameObject class
-            gameObject obj = new gameObject(character, speed, MovementType.Left);
+            gameObject obj = new gameObject(role, character, speed, MovementType.Left);
 
             // count object
             objects[role.GetHashCode()] += 1;
@@ -52,7 +52,7 @@ namespace Movements
         public gameObject createObj(Role role, PictureBox character, int speed, MovementType type)
         {
             // adding objects in gameObject class
-            gameObject obj = new gameObject(character, speed, type);
+            gameObject obj = new gameObject(role, character, speed, type);
 
             // saving is Game Class
             game Add = game.GetInstance();
