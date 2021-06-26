@@ -11,12 +11,13 @@ namespace Movements
 
     public class game
     {
-        
+        private List<Grid> Grid;
+
 
         // A private constructor to restrict the object creation from outside
         private game()
         {
-
+            Grid = new List<Grid>();
         }
 
         // A private static instance of the same class
@@ -51,6 +52,12 @@ namespace Movements
                 go.Update();
 
             }
+        }
+        public void addGrid(int tileWidth, int tileHeight, Form gameForm, string filePath, string imagesFolderPath)
+        {
+            Grid grid = new Grid(tileWidth, tileHeight, gameForm, filePath, imagesFolderPath);
+            Grid.Add(grid);
+            grid.addTilesToGrid();
         }
         public void addCollision(CollisionDetection collision)
         {

@@ -66,6 +66,7 @@
     <Compile Include="Reverse.cs" />
     <Compile Include="Right.cs" />
     <Compile Include="Role.cs" />
+    <Compile Include="Grid.cs" />
     <Compile Include="Up.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
